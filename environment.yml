@@ -1,0 +1,37 @@
+name: pepchain
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8.20
+  
+  # PyTorch 및 CUDA (로컬 환경과 동일한 버전)
+  - pytorch=2.4.1
+  - cudatoolkit=11.8.0
+  - cudnn=8.9.7.29
+  
+  # 핵심 ML/AI 라이브러리
+  - transformers
+  
+  # 생물학 관련 라이브러리
+  - biopython=1.83
+  
+  # 수치 계산 및 데이터 처리
+  - numpy
+  - scipy=1.10.1
+  - pandas
+  
+  # 시각화
+  - matplotlib
+  
+  # 진행률 표시
+  - tqdm
+  
+  # pip 패키지들
+  - pip
+  - pip:
+    - fair-esm==2.0.0
+    - wandb==0.21.3
+    - mdtraj==1.10.0
+    - PeptideBuilder==1.1.0
